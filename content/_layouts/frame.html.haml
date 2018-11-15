@@ -83,11 +83,11 @@
               %p.box
                 %a{:href => "https://github.com/jenkins-infra/jenkins.io/edit/master/content/#{page.relative_source_path}",
                 :title => "Edit #{page.relative_source_path} on GitHub"}
-                  改善此页
+                  Improve this page
                 |
                 %a{:href => "https://github.com/jenkins-infra/jenkins.io/commits/master/content/#{page.relative_source_path}",
                 :title => "View #{page.relative_source_path} history on GitHub"}
-                  网页记录
+                  Page history
 
             .license-box
               #creativecommons
@@ -96,29 +96,30 @@
                     %img{:src => 'https://licensebuttons.net/l/by-sa/4.0/88x31.png'}/
 
                 %p
-                  本网站的内容基于Creative Commons Attribution-ShareAlike 4.0 License许可.
+                  The content driving this site is licensed under the Creative
+                  Commons Attribution-ShareAlike 4.0 license.
 
           .links.col-md-8
             .container
               .row
                 .area.col-md-3
                   .div-mar
-                    %h5 资源
+                    %h5 Resources
 
                     %ul.resources
                       %li
                         %a{:href => expand_link("events")}
-                          活动
+                          Events
                       %li
                         %a{:href => expand_link("doc")}
-                          文档
+                          Documentation
                       %li
                         %a{:href => expand_link("node")}
-                          博客
+                          Blog
 
                 .area.col-md-3
                   .div-mar
-                    %h5 解决方案
+                    %h5 Solutions
 
                     %ul
                       - site.solutions.keys.sort.each do |key|
@@ -129,12 +130,12 @@
 
                 .area.col-md-3
                   .div-mar
-                    %h5 项目
+                    %h5 Project
 
                     %ul.project
                       %li
                         %a{:href => 'https://issues.jenkins-ci.org'}
-                          问题跟踪
+                          Issue tracker
                       %li
                         %a{:href => 'https://wiki.jenkins.io'}
                           Wiki
@@ -143,19 +144,22 @@
                           GitHub
                       %li
                         %a{:href => 'https://ci.jenkins.io'}
-                          Jenkins构建CI
+                          Jenkins on Jenkins
 
                 .area.col-md-3
                   .div-mar
-                    %h5 社区
+                    %h5 Community
 
                     %ul.community
                       %li
                         %a{:href => 'https://groups.google.com/forum/#!forum/jenkinsci-users'}
-                          用户邮件列表
+                          Users mailing list
                       %li
                         %a{:href => 'https://groups.google.com/forum/#!forum/jenkinsci-dev'}
-                          开发人员邮件列表
+                          Developers mailing list
+                      %li
+                        %a{:href => expand_link("sigs")}
+                          Special Interest Groups
                       %li
                         %a{:href => 'https://twitter.com/jenkinsci'}
                           Twitter
@@ -164,10 +168,10 @@
                           Reddit
                       %li
                         %a{:href => expand_link("merchandise")}
-                          购物
+                          Merchandise
                       %li
                         %a{:href => expand_link("awards")}
-                          荣誉
+                          Awards
 
     = google_analytics_universal
 
